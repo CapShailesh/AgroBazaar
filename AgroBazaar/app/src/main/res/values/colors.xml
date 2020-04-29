@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gradient_start_color">#4C84FF</color>
+    <color name="gradient_end_color">#10A3FE</color>
+
+    <color name="tab_indicator_gray">#C0C0C0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+    <color name="blueMade">#05C3F9</color>
+    <color name="blueDrkMade">#0691B8</color>
+
+</resources>

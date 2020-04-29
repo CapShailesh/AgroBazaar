@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgnew"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="35dp"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="15dp"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/s_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/username"
+        android:ems="10"
+        android:hint="E-mail"
+        android:paddingLeft="45dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+         />
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/usersign"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="45dp"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/phone"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:paddingLeft="45dp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/location"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        android:paddingLeft="45dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/location"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:paddingLeft="45dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/location"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="State"
+        android:inputType="textPersonName"
+        android:paddingLeft="45dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/location"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Pin Code"
+        android:inputType="textPersonName"
+        android:paddingLeft="45dp"
+        android:visibility="visible" />
+
+
+
+
+    <EditText
+        android:id="@+id/s_password"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="45dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/s_repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/password"
+        android:ems="10"
+        android:hint="Re-password"
+        android:inputType="textPassword"
+        android:paddingLeft="45dp"
+        android:layout_gravity="center"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="332dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+      >
+
+
+        <RadioButton
+            android:id="@+id/buyer"
+            android:layout_width="281dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:buttonTint="@android:color/darker_gray"
+            android:onClick="checkbutton"
+            android:paddingLeft="5dp"
+            android:text="Buyer"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/seller"
+            android:layout_width="281dp"
+            android:layout_height="54dp"
+            android:buttonTint="@android:color/darker_gray"
+            android:onClick="checkbutton"
+            android:paddingLeft="5dp"
+            android:text="Farmer"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="333dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/greenback"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="SIGNUP"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:text="Already have an account?"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="Login"
+            android:textColor="#39FF14"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

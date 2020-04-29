@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settings_profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/profile_image_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Profile"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/settings_profile_image"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/settings_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image_change_btn"
+            android:layout_margin="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="text"
+            android:hint="Full Name..."
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/settings_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_full_name"
+            android:layout_margin="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="number"
+            android:hint="Phone Number..."
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/settings_address"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_phone_number"
+            android:layout_margin="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:hint="Address..."
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/settings_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_address"
+            android:layout_margin="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:hint="City..."
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/settings_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_city"
+            android:hint="State..."
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/settings_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_state"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Pin Code..."
+            android:padding="10dp" />
+
+
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="176dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/settings_pincode"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:text="Update Profile" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
